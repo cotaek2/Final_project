@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import ezen.dteam.dao.UserDAO;
+import ezen.dteam.vo.MemberVO;
 
 @Service
 public class UserSVCImpl implements UserSVC{
@@ -27,6 +28,12 @@ public class UserSVCImpl implements UserSVC{
 	@Override
 	public int checkEmail(String email) throws Exception {
 		return userDAO.checkEmail(email);
+	}
+
+	//아이디찾기
+	@Override
+	public String searchId(MemberVO vo) throws Exception {
+		return userDAO.searchId(vo);
 	}
 	
 }

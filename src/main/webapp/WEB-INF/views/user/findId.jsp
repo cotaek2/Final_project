@@ -36,7 +36,76 @@
     <!-- JS -->
     <script src="<%=request.getContextPath() %>/resources/js/helpers.js"></script>
 	<script src="<%=request.getContextPath() %>/resources/js/config.js"></script>
-  
+  	<script>
+  		function searchId(){
+  			
+  			let mname = document.frm.mname.value;
+  			let mbirth = document.frm.mbirth.value;
+  			let mphone = document.frm.mphone.value;
+  			
+  			let isSubmit = true;
+  			;
+  			//이름
+  			if(mname == "" || mname === undefined || mname === null){
+  				isSubmit = false;
+  			}else{
+  				let regId = /^[가-힣a-zA-Z]$/;
+  				let regRs = regId.test(mname);
+  				if (!regRs) {
+  				} else {
+  					isSubmit = false;
+  				}
+  			}
+  			//생년월일
+  			if (mbirth == "" || mbirth === undefined || mbirth === null) {
+				isSubmit = false;
+			} else {
+				let regId = /^(19|20)\d\d(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])$/;
+				let regRs = regId.test(mbirth);
+				if (regRs) {
+				} else {
+					isSubmit = false;
+				}
+			}
+  			//휴대폰번호
+  			if (mphone == "" || mphone === undefined || mphone === null) {
+				isSubmit = false;
+			} else {
+				let regId = /^01(0|1|[6-9])[0-9]{3,4}[0-9]{4}$/;
+				let regRs = regId.test(mphone);
+				if (regRs) {
+				} else {
+					isSubmit = false;
+				}
+			}
+  			
+  			//제출
+  			if(isSubmit){
+  				
+  				$.ajax({
+  					url:"searchId",
+  					type:"post",
+  					data: {
+  						mname: $("#mname").val(),
+  						mbirth: $("#mbirth").val(),
+  						mphone: $("#mphone").val(),
+  					},
+  					success:function(data){
+  						let result = data.trim();
+  						if(result == "" || result === undefined || result === null){
+  							alert("일치하는 아이디가 없습니다.");
+  						}else{
+  							alert("일치하는 아이디는 '"+data+"'입니다.");
+  						}
+  					},error: function(){
+  						
+  					}
+  				});
+  			} else{
+  				alert("입력값이 유효하지 않습니다.");
+  			}
+  		}
+  	</script>
   </head>
   <body>
     <!-- Content -->
@@ -44,7 +113,6 @@
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner py-4">
          
-         <!-- Forgot id -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
@@ -53,16 +121,16 @@
                   <span class="app-brand-text demo text-body fw-bolder">dflix</span>
                 </a>
               </div>
-              <!-- /Logo -->
               
-              <form id="formAuthentication" class="mb-3" action="index" method="POST">
+              <form name="frm" id="formAuthentication" class="mb-3" action="index" method="POST"
+              	action="#" onsubmit="return false;">
                 <div class="mb-3">
                   <label for="inputName" class="form-label">이름</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputName"
-                    name="inputName"
+                    id="mname"
+                    name="mname"
                     autofocus
                   />
                 </div>
@@ -71,8 +139,8 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="inputBirth"
-                    name="inputBirth"
+                    id="mbirth"
+                    name="mbirth"
                     autofocus
                   />
                 </div>
@@ -81,12 +149,12 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="inputPhone"
-                    name="inputPhone"
+                    id="mphone"
+                    name="mphone"
                     autofocus
                   />
                 </div>
-                <button class="btn btn-primary d-grid w-100">아이디 찾기</button>
+                <button class="btn btn-primary d-grid w-100" onclick="searchId();">아이디 찾기</button>
               </form>
               <div class="text-center">
                 <a href="login" class="d-flex align-items-center justify-content-center">

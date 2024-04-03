@@ -4,6 +4,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import ezen.dteam.vo.MemberVO;
+
 @Repository
 public class UserDAO {
 	
@@ -27,4 +29,8 @@ public class UserDAO {
 		return sqlSession.selectOne(nameSpace+".checkEmail",email);
 	}
 	
+	//아이디 찾기
+	public String searchId(MemberVO vo) throws Exception{
+		return sqlSession.selectOne(nameSpace+".searchId",vo);
+	}
 }

@@ -34,4 +34,9 @@
 		select count(*) from member where memail = #{memail}
 	</select>
 	
+	<!-- 아이디 찾기 -->
+	<select id="searchId" parameterType="MemberVO" resultType="String">
+		select mid from member where mname=#{mname} and mbirth=#{mbirth} and mphone=#{mphone}
+	</select>
+	
 </mapper>

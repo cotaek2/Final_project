@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import ezen.dteam.service.UserSVCImpl;
+import ezen.dteam.vo.MemberVO;
 
 //@RequestMapping(value="/user")
 @Controller
@@ -84,12 +85,20 @@ public class User {
 	
 	
 	@RequestMapping(value = "/findId", method = RequestMethod.GET)
-	public String findId() {
+	public String findId() throws Exception{
 		
 		return "user/findId";
 	}
+	//아이디 찾기(ajax)
+	@ResponseBody
+	@RequestMapping(value = "/searchId", method = RequestMethod.POST)
+	public String searchId(MemberVO vo) throws Exception{
+		
+		return service.searchId(vo);
+		
+	}
 	@RequestMapping(value = "/findPw", method = RequestMethod.GET)
-	public String findPw() {
+	public String findPw() throws Exception{
 		
 		return "user/findPw";
 	}
