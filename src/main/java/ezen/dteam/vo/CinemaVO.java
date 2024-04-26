@@ -30,9 +30,6 @@ public class CinemaVO {
 	
 	private List<ScreenHallVO> screenHallVOList;
 	
-	
-	
-	
 	public CinemaVO(Set<ScreenHallVO> screenHallVOSet, List<ScreenHallVO> screenHallVOList) {
 		super();
 		this.screenHallVOSet = screenHallVOSet;

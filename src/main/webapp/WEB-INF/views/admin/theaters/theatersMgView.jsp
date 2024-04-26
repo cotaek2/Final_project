@@ -135,7 +135,8 @@
 								</div>
 							</div>
 						</div>
-							<button class="right m-1 btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#backDropModal">추가</button>
+							<button class="right m-1 btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#backDropModal">영화 추가</button>
+							<button class="right m-1 btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#backDropModalScreen">상영관 추가</button>
 					</div>
 				</div>
 			</div>
@@ -146,7 +147,7 @@
 	</div>
 	<!-- / Layout wrapper -->
 
-<!-- 모달 -->
+	<!-- 모달 -->
 	<div class="modal fade" id="backDropModal" data-bs-backdrop="static"
 		tabindex="-1" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog">
@@ -186,6 +187,89 @@
 						<div class="col mb-0">
 							<label for="dobBackdrop" class="form-label">시간 작성</label> 
 							<input type="time" id="dobBackdrop" class="form-control" name="sstartTime" value="12:00">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onclick="modalFn()">저장</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 모달끝 -->
+	
+	<!-- 모달 -->
+	<div class="modal fade" id="backDropModalScreen" data-bs-backdrop="static"
+		tabindex="-1" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog">
+			<form class="modal-content" action="" method="post" name="modal">
+				<div class="modal-header">
+					<h5 class="modal-title" id="backDropModalTitle">상영관 추가</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col mb-3">
+							<div class="form-label">상영관 번호</div>
+							<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+							<select id="" class="form-select color-dropdown" name="shallType">
+									<option value="">2D</option>
+									<option value="">3D</option>
+									<option value="">IMAX 3D</option>
+									<option value="">4D</option>
+									<option value="">4D X</option>
+									<option value="">Screen X</option>
+							</select>
+							<select id="" class="form-select color-dropdown" name="shallLocation1">
+									<option value="">1층</option>
+									<option value="">2층</option>
+									<option value="">3층</option>
+									<option value="">4층</option>
+									<option value="">5층</option>
+									<option value="">6층</option>
+									<option value="">7층</option>
+									<option value="">8층</option>
+									<option value="">9층</option>
+									<option value="">10층</option>
+									<option value="">11층</option>
+									<option value="">12층</option>
+									<option value="">13층</option>
+									<option value="">14층</option>
+									<option value="">15층</option>
+									<option value="">16층</option>
+									<option value="">17층</option>
+									<option value="">18층</option>
+									<option value="">19층</option>
+									<option value="">20층</option>
+							</select>
+							<select id="" class="form-select color-dropdown" name="shallLocation2">
+									<option value="">1관</option>
+									<option value="">2관</option>
+									<option value="">3관</option>
+									<option value="">4관</option>
+									<option value="">5관</option>
+									<option value="">6관</option>
+									<option value="">7관</option>
+									<option value="">8관</option>
+									<option value="">9관</option>
+									<option value="">10관</option>
+									
+							</select>
+                            </div>
+						</div>
+					</div>
+					<div class="row g-2">
+						<div class="col mb-0">
+							<div class="form-label">영화목록</div>
+							<select id="selectTypeOpt" class="form-select color-dropdown">
+									<option value="${item.cno}">${item.cname} / 상영시간(분): ${item.cshowTime}</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col mb-0">
+							<label for="dobBackdrop" class="form-label">시간 작성</label>
 						</div>
 					</div>
 				</div>
