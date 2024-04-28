@@ -1,24 +1,3 @@
-<h2 align="center">KOREABOX</h2>
-<p align="center">
-  🙍‍♂️EZEN IT Academy Project in 2024🙍‍♀️
-</p>
-<br><br>
-
-
-### Description
-* 영화 예매를 위한 스프링3.0 MVC 기반 사이트입니다.
-
-### Maintainer
-* 이준택  (팀장)
-* 전용휘 
-* 정다희 
-
-### Contribution
-* 프로젝트 및 Github 셋팅 및 관리, 플로우차트 작성, 데이터베이스 설계 및 구축, ER다이어그램 작성
-* 상영스케줄관리, 상영관관리, 마이페이지, 프로그램 전체 예외처리 및 에러페이지 매핑
-
-### Period
-* 2024/03/18 - 2024/04/16
 
 ### Stack
 * Language : JAVA, JSP, HTML, CSS, Javascript
@@ -31,13 +10,13 @@
 ***
 
 ## 👨‍🏫 프로젝트 소개
-### EzenUniversity
-"이젠 대학교에서 전자출결 도입을 통해 학생들과 교수의 강의시간을 확보하고
+### DFLIX
+"영화 예매를 위한 스프링3.0 MVC 기반 사이트입니다.
 <br>
 불필요한 시스템을 줄여 강의 및 학사관리에 효율을 극대화"
 
 ## ⏲️ 개발 기간 
-- 2024.1.22. ~ 2024.2.23.<br>
+- 2024.3.18. ~ 2024.4.16.<br>
   
 ## 🧑‍🤝‍🧑 개발자 소개 
 - **이준택** : 팀장, 프로그램 관리, 기획, 검토
@@ -49,6 +28,7 @@
 - **MySQL 8.0.35**
 - **JDK 13.0.2**
 - **GitHub**
+- **AWS**
 
 ## 🌐 개발 언어
 - **HTML**
@@ -56,11 +36,16 @@
 - **JavaScript**
 - **jQuery**
 - **JAVA(JSP, JDBC)**
+- **Spring Framework 4.3.4**
 
 ## ⚙️ 개발 도구
-- **Eclipse 2021_11**
+- **STS 3(Spring Toll Suite)**
 - **StarUML**
 - **ERMaster**
+- **FileZila**
+
+## 🚀 가상화 플랫폼
+- **Docker**
 
 ## ERD
 [ERD Cloud에서 직접보기](https://www.erdcloud.com/d/ZeFc6XZsnKHso7x9x, "cotaek2's ERD")
