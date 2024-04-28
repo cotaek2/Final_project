@@ -63,21 +63,22 @@
   </tr>
   <tr align="center">
     <td width="250px">
-      관리자 뷰, 공통 뷰
+      영화예매 뷰
       <br>
-      공지사항 CRUD
+      공공데이터 API Scheduler
       <br>
-      사용자관리 CRUD
+      영화 예매 페이지
       <br>
-      강의출석 입력
+      메인페이지 박스오피스
       <br>
-      강의성적 입력
+      나의 예매내역 조회
     </td>
     <td width="250px">
-      교수 뷰<br>로그인<br>DB매니저<br>강의 출석 입력<br>강의 성적 입력<br>강의 CRUD
+      DB설계<br>고객센터<br>관리자 게시판 CRUD<br>극장시간표 CRUD<br>극장 상영정보 조회    
     </td>
     <td width="250px">
-      학생 뷰<br>강의 출석 조회<br>강의 성적 조회<br>학생 수강신청<br>
+      메인페이지, 영화목록 뷰<br>Spring Security<br>로그인
+      <br>회원가입<br>아이디 찾기<br>회원정보 변경
     </td>
   </tr>
 </table>
