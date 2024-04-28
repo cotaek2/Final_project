@@ -1,14 +1,3 @@
-
-### Stack
-* Language : JAVA, JSP, HTML, CSS, Javascript
-* Library : cos, JQuery, Lombok, jstl, el
-* Framework : Spring3.0 MVC
-* Database : ORACLE(MyBatis)
-* Rest API(상영스케줄관리, 상영관관리, 마이페이지)
-* SPA 페이지 
-
-***
-
 ## 👨‍🏫 프로젝트 소개
 ### DFLIX
 "영화 예매를 위한 스프링3.0 MVC 기반 사이트입니다.
