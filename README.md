@@ -41,7 +41,7 @@
 
 # 📌 주요 기능
 
-<img src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B5%AC%EC%84%B1%EB%8F%84.png" width="750px"/>
+<img src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B5%AC%EC%84%B1%EB%8F%84.png" width="750px"/>
 
 <br>
 <table>
@@ -79,66 +79,66 @@
 <table>
   <tr>
     <th>
-      사용자 추가
+      메인박스오피스
     </th>
     <th>
-      사용자 조회
+      메인상영예정작
     </th>
   </tr>
   <tr>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%B6%94%EA%B0%80(%EC%A3%BC%EC%86%8CAPI).png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EB%A9%94%EC%9D%B8%EB%B0%95%EC%8A%A4%EC%98%A4%ED%94%BC%EC%8A%A4.png"/>
     </td>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%A1%B0%ED%9A%8C.png"/>
-    </td>
-  </tr>
-  <tr>
-    <th>
-       성적 입력
-    </th>
-    <th>
-       출석 입력
-    </th>
-  </tr>
-  <tr>
-    <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EC%84%B1%EC%A0%81%20%EC%9E%85%EB%A0%A5.png"/>
-    </td>
-    <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EC%B6%9C%EC%84%9D%20%EC%9E%85%EB%A0%A5.png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EB%A9%94%EC%9D%B8%EC%83%81%EC%98%81%EC%98%88%EC%A0%95%EC%9E%91.png"/>
     </td>
   </tr>
   <tr>
     <th>
-       게시판 목록
+       스케쥴러
     </th>
     <th>
-       게시글 조회
+       스케쥴러DB
     </th>
   </tr>
   <tr>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EB%AA%A9%EB%A1%9D.png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%9F%AC.png"/>
     </td>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%A1%B0%ED%9A%8C.png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%9F%ACDB.PNG"/>
     </td>
   </tr>
   <tr>
     <th>
-       게시글 작성
+       영화예매
     </th>
     <th>
-       게시글 수정
+       영화관좌석예매
     </th>
   </tr>
   <tr>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%9E%91%EC%84%B1.png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4step1.PNG"/>
     </td>
     <td>
-      <img width="375px" higth="550px" src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/%ED%99%94%EB%A9%B4%EC%BA%A1%EC%B3%90/%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%88%98%EC%A0%95.png"/>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4step2.PNG"/>
+    </td>
+  </tr>
+  <tr>
+    <th>
+       영화예매정보
+    </th>
+    <th>
+       나의 예매내역
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4step3.PNG"/>
+    </td>
+    <td>
+      <img width="375px" higth="550px" src="https://github.com/cotaek2/Final_project/blob/master/%EC%9E%90%EB%A3%8C/reademe/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EB%82%B4%EC%97%AD.PNG"/>
     </td>
   </tr>
 </table>
