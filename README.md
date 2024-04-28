@@ -50,7 +50,7 @@
 ## ERD
 [ERD Cloud에서 직접보기](https://www.erdcloud.com/d/ZeFc6XZsnKHso7x9x, "cotaek2's ERD")
 
-<img src="https://github.com/cotaek2/second_team_project/blob/origin/%EC%9E%90%EB%A3%8C/ERD/EzenUnivERD.png" width="750px">
+<img src="https://github.com/cotaek2/Final_project/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%AC%B8%EC%84%9C/04.%EC%82%B0%EC%B6%9C%EB%AC%BC%20%EC%A0%9C%EC%B6%9C/04.%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%84%A4%EA%B3%84%EC%84%9C/erm%20%EC%BA%A1%EC%B3%90%EB%B3%B8.JPG" width="750px">
 
 # 📌 주요 기능
 
