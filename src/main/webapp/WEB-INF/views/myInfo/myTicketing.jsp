@@ -105,7 +105,7 @@
 				</div>
     		</div>
     	</div>
-    	<!-- <script>
+    	<script>
 	    // 삭제 버튼 클릭 시 서버로 삭제 요청
 	    $(".deleteBtn").click(function() {
 	    	console.log(this);
@@ -117,7 +117,7 @@
 //	            document.forms['myTicketDel'].submit();
 	        }
 	    });
-    	</script> -->
+    	</script>
     </div>
   </div>
 	<!-- 푸터 -->

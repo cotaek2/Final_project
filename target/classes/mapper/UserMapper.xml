@@ -40,7 +40,7 @@
 	</select>
 	
 	<!--  비밀번호 찾기(->변경됨)  -->
-	<update id="updatePw"> 
+	<update id="updatePw" parameterType="MemberVO"> 
 		Update member set mpw = #{mpw} where mid = #{mid}
 	</update>
 </mapper>

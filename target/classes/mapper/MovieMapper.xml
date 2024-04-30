@@ -4,7 +4,7 @@
 <mapper namespace="ezen.dteam.mapper.movieMapper">
 	<select id="selectBoxOfficeCinema" parameterType="PagingVO" resultType="CinemaVO">
 	<![CDATA[
-		SELECT * FROM cinema WHERE crank < 100 ORDER BY crank ASC limit ${start-1},#{perPage}
+		SELECT * FROM cinema WHERE copenDate <= CURDATE() ORDER BY crank IS NULL, CAST(crank AS UNSIGNED), crank ASC limit ${start-1},#{perPage}
 	]]>
 	</select>
 	<select id="selectUnopen"  parameterType="PagingVO" resultType="CinemaVO">

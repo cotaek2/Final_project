@@ -10,7 +10,7 @@
 		 WHERE mid = #{value}
 	</select>
 	<select id="checkEmail" parameterType="String" resultType="int">
-		select count(*) from Member where memail = #{memail}
+		select count(*) from member where memail = #{memail}
 	</select>
 
 	<update id="updateMyinfo" parameterType="MemberVO"> 

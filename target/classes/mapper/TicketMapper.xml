@@ -37,17 +37,24 @@
 	</select>
 	
 	<select id="selectScreenSeat" resultType="ScreenSeatVO">
-		SELECT *
+		SELECT c.cno, c.cname, ss.*, sh.*, s.*, t.tno, t.tname
 		FROM screenSeat ss
-		INNER JOIN screenHall sh
-		ON ss.shallno = sh.shallno
-		INNER JOIN screen s
-		ON sh.shallno = s.shallno
-		INNER JOIN cinema c
-		ON c.cno = s.cno
-		INNER JOIN theater t
-		ON t.tno = sh.tno
-		WHERE  t.tno = #{tno} AND s.sday = #{sday} AND s.cno = #{cno} AND s.shallno = #{shallno} AND s.sstartTime = #{sstartTime}
+		INNER JOIN screenHall sh ON ss.shallno = sh.shallno
+		INNER JOIN screen s ON sh.shallno = s.shallno
+		INNER JOIN cinema c ON c.cno = s.cno
+		INNER JOIN theater t ON t.tno = sh.tno
+		WHERE  t.tno = #{tno} AND s.sday = #{sday} AND s.cno = #{cno} AND s.shallno = #{shallno} AND s.sstartTime = #{sstartTime};
+	</select>
+	
+	<select id="selectUseingSeat" resultType="ScreenSeatVO">
+		SELECT * 
+		FROM ticketDetail td, screen s, cinema c, screenHall sh
+		WHERE td.sno = s.sno
+		  AND s.cno=c.cno
+		  AND s.shallno = sh.shallno
+		  AND c.cno = #{cno}
+		  AND s.sstartTime = #{sstartTime}
+		  AND s.sno = #{sno};
 	</select>
 	
 	<select id="selectCheckSeat" resultType="TicketDetailVO">
@@ -74,5 +81,14 @@
             VALUES (#{ticketno}, #{sno}, #{sseatno}, date(NOW()));
         ]]>
     </insert>
+    
+    <select id="selectShallSeatAll" resultType="int">
+    	SELECT shallSeat FROM screenHall sh WHERE sh.shallno = (SELECT shallno FROM screen sc WHERE sno = #{sno});
+    </select>
+	
+	<select id="selectShallSeatUseing" resultType="int">
+		SELECT count(td.ticketno) FROM ticketDetail td INNER JOIN ticket tk ON td.ticketno = tk.ticketno WHERE td.sno = (SELECT sno FROM screen sc WHERE sno = #{sno}) AND tk.ticketDelyn = 0;
+	</select>
+	
 	
 </mapper>
