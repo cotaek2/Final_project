@@ -199,8 +199,7 @@ public class Ticket {
 		if (seatNosArray != null && seatNosArray.length > 0) {
 			String[] noArray = seatNosArray[0].split(",");
 			ticketSVC.insertTicket(mno);
-			int ticketno = ticketSVC.lastId();
-			
+			int ticketno = ticketSVC.lastId();			
 			
 			for(String sseatno : noArray) {	
 				
