@@ -48,13 +48,15 @@
 	
 	<select id="selectUseingSeat" resultType="ScreenSeatVO">
 		SELECT * 
-		FROM ticketDetail td, screen s, cinema c, screenHall sh
+		FROM ticketDetail td, screen s, cinema c, screenHall sh, ticket t
 		WHERE td.sno = s.sno
+		  AND td.ticketno = t.ticketno
 		  AND s.cno=c.cno
 		  AND s.shallno = sh.shallno
 		  AND c.cno = #{cno}
 		  AND s.sstartTime = #{sstartTime}
-		  AND s.sno = #{sno};
+		  AND s.sno = #{sno}
+		  AND ticketDelyn = 0;
 	</select>
 	
 	<select id="selectCheckSeat" resultType="TicketDetailVO">
